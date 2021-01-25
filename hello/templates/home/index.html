@@ -1,0 +1,35 @@
+<html<head><title>sdfidsjf</title>
+<script>
+function show(page)
+{
+	document.querySelectorAll('div').forEach(div =>
+{
+	div.style.display='none';
+})
+	document.querySelector(`#${page}`).style.display='block';
+}
+document.addEventListener('DOMContentLoaded',function()
+{document.querySelectorAll('button').forEach(button =>
+{
+button.onclick=function()
+{
+show(this.dataset.page);
+}});});
+</script>
+<style>
+div
+{
+display:none;
+}
+</style>
+<body>
+<button data-page="page1">jdksa</button>
+<button data-page="page2">sdsadas</button>
+<button data-page="page3">sdsadas</button>
+
+<div id="page1"><h1>sdjaskldjkasd</h1></div>
+<div id="page2"><h1>sdjaskldjkasdasdsadasd</h1></div>
+<div id="page3"><h1>fdasfsd </h1></div>
+</body>
+</head>
+</html>

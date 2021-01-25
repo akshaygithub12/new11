@@ -1,0 +1,13 @@
+{% load static %}
+<html>
+<head>
+<link href="{% static 'yesno/new1.css' %}" rel="stylesheet">
+</head>
+<body>
+{% if newyear %}
+<h1>"this is the greate year for you guys"</h1>
+{% else %}
+<h1>"no"</h1>
+{% endif %}
+</body>
+</html>
